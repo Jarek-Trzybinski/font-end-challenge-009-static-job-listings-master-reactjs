@@ -10,29 +10,39 @@ function App() {
   console.log('cards', cards);
   return (
     <div className="App">
-      
+      <header></header>
+      <main>
       {cards.map(card => (
-        <div className="card" key={card.id}>
-          <img src={card.logo} />
-          <div>
-            {card.company}
-            {card.new && 'NEW!' }
-            {card.featured && 'FEATURED'}
+        <div className="Card" key={card.id}>
+          <img
+            src={require(`${card.logo}`)}
+          />
+          <div className="CardTop">
+            <span className="CompanyName">{card.company} </span>
+            
+            {card.new && <span className="New">NEW!</span> }
+            {card.featured && <span className="Featured">FEATURES!</span> }
           </div>
-          <div>
+          <div className="Position">
             {card.position}
           </div>
-          <div>
-            {card.postedAt} {card.contract} {card.location}
+          <div className="JobInfo">
+            <span>{card.postedAt}</span>
+            <span className="dot">&middot;</span>
+            <span>{card.contract}</span>
+            <span className="dot">&middot;</span>
+            <span>{card.location}</span>
           </div>
-          <div>
-            {card.role}
-            {card.level}
-            {card.languages.map(language => language)}
+          <div className="JobKnowledge">
+            <span>{card.role}</span>
+            <span>{card.level}</span>
+            {card.languages.map(language => <span> {language} </span>)}
           </div>
 
         </div>
       ))}
+      </main>      
+
 
     </div>
   );
