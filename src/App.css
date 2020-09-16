@@ -19,6 +19,8 @@
   font-size: 15px;
 }
 
+/* MOBILE DESIGN */
+
 .App {
   background: var(--desatu-grayish-cyan);
 }
@@ -44,6 +46,14 @@ main {
   position: relative;
   padding-top: 32.5px;
   border: 1px var(--desaturated-dark-cyan) solid;
+}
+
+.CardInfos {
+  display: flex;
+}
+
+.CardWrapper {
+  width: 100%;
 }
 
 .Card img {
@@ -95,6 +105,7 @@ main {
   padding-bottom: 15px;
   border-bottom: 1px solid var(--dark-grayish-cyan);
   margin-bottom: 7px;
+  width: 100%;
 }
 
 
@@ -117,4 +128,41 @@ main {
   padding: 8px;
   margin: 10px 20px 10px 0;
   border-radius: 4px;
+}
+
+/* DESKTOP DESIGN */
+@media only screen and (min-width: 900px) {
+  main {
+    padding: 65px 12%;
+  }
+
+  .Card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Card img {
+    height: 90px;
+    position: relative;
+    transform: none;
+    margin-right: 15px;
+  }
+
+
+  .Card .JobKnowledge, .Card div {
+    flex: 1;
+  }
+
+  .Position {
+    margin-bottom: 3px;
+  }
+
+  .JobInfo {
+    border-bottom: none;
+  }
+
+ .JobKnowledge {
+   align-items: center;
+   justify-content: flex-end;
+ }
 }
