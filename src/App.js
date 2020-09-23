@@ -3,16 +3,52 @@ import './App.css';
 import data from './data.json';
 
 function App() {
-  console.log('data', data);
 
+
+  const addFilter = (filter) => {
+    !filters.includes(filter) && setFilters([...filters, filter]);
+  }
+
+  const removeFilter = (filter) => {
+    const newFilters = filters.filter(el => (el !== filter));
+    console.log(newFilters);
+    setFilters(newFilters);
+  }
+
+  const clearFiters = () => {
+    setFilters([]);
+  }
+
+  const [filters, setFilters] = useState([]);
   const [cards, setCards] = useState(data);
 
-  console.log('cards', cards);
+  let filteredCards;
+
+  const filterFunc = ({role, level, languages}) => {
+    let filterOptions = [role, level, ...languages];
+
+    return filters.every(filter => filterOptions.includes(filter));
+  }
+
+  if (filters.length > 0) {
+    filteredCards = cards.filter(filterFunc);
+  } else {
+    filteredCards = cards;
+  }
+
   return (
     <div className="App">
       <header></header>
       <main>
-      {cards.map(card => (
+    <div>
+      
+      {filters.length > 0 && (filters.map(filter => (<span onClick={() => removeFilter(filter)}>{filter}</span>)) )} 
+      {filters.length > 0 && (<span onClick={() => clearFiters()}>Clear</span>)}
+      
+      
+      </div>
+      {filteredCards
+      .map(card => (
         <div className="Card" key={card.id}>
           <div className="CardInfos">
             <img
@@ -39,14 +75,14 @@ function App() {
           </div>
 
           <div className="JobKnowledge">
-            <span>{card.role}</span>
-            <span>{card.level}</span>
-            {card.languages.map(language => <span> {language} </span>)}
+            <span onClick={() => addFilter(card.role)}>{card.role}</span>
+            <span onClick={() => addFilter(card.level)}>{card.level}</span>
+            {card.languages.map(language => <span onClick={()=> addFilter(language)}> {language} </span>)}
           </div>
 
         </div>
       ))}
-      </main>      
+      </main>
 
 
     </div>
