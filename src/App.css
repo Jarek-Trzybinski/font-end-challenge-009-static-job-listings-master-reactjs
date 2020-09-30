@@ -22,7 +22,7 @@
 /* MOBILE DESIGN */
 
 .App {
-  background: var(--desatu-grayish-cyan);
+  background: var(--light-grayish-cyan);
 }
 
 header {
@@ -210,6 +210,11 @@ main {
 
 /* DESKTOP DESIGN */
 @media only screen and (min-width: 1000px) {
+
+  header {
+    background: url(./images/bg-header-desktop.svg);
+    background-color: var(--desaturated-dark-cyan);
+  }
   main {
     padding: 65px 12%;
   }
