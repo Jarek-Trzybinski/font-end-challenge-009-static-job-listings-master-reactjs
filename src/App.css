@@ -31,7 +31,6 @@ header {
   background-position: cover;
   background-repeat: no-repeat;
   height: 150px;
-  transform: ;
   
 }
 
@@ -46,7 +45,7 @@ header {
     margin-bottom: 50px;
     margin-top: -90px;
     position: relative;
-    border: 1px var(--desaturated-dark-cyan) solid;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 .FilterTags {
   display: flex;
@@ -111,11 +110,15 @@ main {
   margin-bottom: 50px;
   position: relative;
   padding-top: 32.5px;
-  border: 1px var(--desaturated-dark-cyan) solid;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .CardInfos {
   display: flex;
+}
+
+.CardHasFeatured {
+  border-left: 5px solid var(--desaturated-dark-cyan);
 }
 
 .CardWrapper {
@@ -166,6 +169,11 @@ main {
   margin-bottom: 13px;
 }
 
+.Position:hover {
+  color: var(--desaturated-dark-cyan);
+  cursor: pointer;
+}
+
 .JobInfo {
   color: var(--dark-grayish-cyan);
   padding-bottom: 15px;
@@ -192,6 +200,12 @@ main {
   padding: 8px;
   margin: 10px 20px 10px 0;
   border-radius: 4px;
+}
+
+.JobKnowledge span:hover {
+  background-color: var(--desaturated-dark-cyan);
+  color: var(--light-grayish-cyan);
+  cursor: pointer;
 }
 
 /* DESKTOP DESIGN */

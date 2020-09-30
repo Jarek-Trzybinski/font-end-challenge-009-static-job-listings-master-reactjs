@@ -55,7 +55,8 @@ function App() {
 
       {filteredCards
       .map(card => (
-        <div className="Card" key={card.id}>
+        
+         <div className={`Card ${card.featured && 'CardHasFeatured'}`} key={card.id}>
           <div className="CardInfos">
             <img
               src={require(`${card.logo}`)}
@@ -67,7 +68,7 @@ function App() {
                 {card.new && <span className="New">NEW!</span> }
                 {card.featured && <span className="Featured">FEATURES!</span> }
               </div>
-              <div className="Position">
+              <div className="Position" onClick={() => addFilter(card.role)}>
                 {card.position}
               </div>
               <div className="JobInfo">
