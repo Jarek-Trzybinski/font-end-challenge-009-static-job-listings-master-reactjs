@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import './App.css';
 import data from './data.json';
+import iconRemove from './images/icon-remove.svg';
 
 function App() {
 
@@ -40,13 +41,18 @@ function App() {
     <div className="App">
       <header></header>
       <main>
-    <div>
-      
-      {filters.length > 0 && (filters.map(filter => (<span onClick={() => removeFilter(filter)}>{filter}</span>)) )} 
-      {filters.length > 0 && (<span onClick={() => clearFiters()}>Clear</span>)}
-      
-      
-      </div>
+        {filters.length >0 &&
+        
+        <div className="FilterCard">
+        <div className="FilterTags">
+          {filters.length > 0 && (filters.map(filter => (<div className="FilterTag" onClick={() => removeFilter(filter)}><div className="name">{filter}</div><div class="FilterButton"></div></div>)) )}
+        </div>
+          {filters.length > 0 && (<div className="ClearButton" onClick={() => clearFiters()}>Clear</div>)}
+  
+        </div>
+        
+        }
+
       {filteredCards
       .map(card => (
         <div className="Card" key={card.id}>
