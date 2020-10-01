@@ -5,7 +5,6 @@ import iconRemove from './images/icon-remove.svg';
 
 function App() {
 
-
   const addFilter = (filter) => {
     !filters.includes(filter) && setFilters([...filters, filter]);
   }
@@ -86,12 +85,9 @@ function App() {
             <span onClick={() => addFilter(card.level)}>{card.level}</span>
             {card.languages.map(language => <span onClick={()=> addFilter(language)}> {language} </span>)}
           </div>
-
         </div>
       ))}
       </main>
-
-
     </div>
   );
 }

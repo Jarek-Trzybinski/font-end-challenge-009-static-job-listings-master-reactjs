@@ -65,7 +65,10 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
+}
+
+.FilterTag:hover {
+  cursor: pointer;
 }
 
 .name {
@@ -92,6 +95,9 @@ header {
   align-self: center;
   font-weight: 700;
   color: var(--dark-grayish-cyan);
+}
+.ClearButton:hover {
+  cursor: pointer;
 }
 
 .ClearButton:hover {
