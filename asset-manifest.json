@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/front-end-challenge-009-static-job-listings-master-reactjs/static/css/main.6be5a17f.chunk.css",
+    "main.js": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/main.44357e50.chunk.js",
+    "main.js.map": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/main.44357e50.chunk.js.map",
+    "runtime-main.js": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/runtime-main.abfc68b8.js",
+    "runtime-main.js.map": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/runtime-main.abfc68b8.js.map",
+    "static/js/2.04abfe44.chunk.js": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/2.04abfe44.chunk.js",
+    "static/js/2.04abfe44.chunk.js.map": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/2.04abfe44.chunk.js.map",
+    "index.html": "/front-end-challenge-009-static-job-listings-master-reactjs/index.html",
+    "precache-manifest.d66cbe6c7be5e207395d17009b36b6c4.js": "/front-end-challenge-009-static-job-listings-master-reactjs/precache-manifest.d66cbe6c7be5e207395d17009b36b6c4.js",
+    "service-worker.js": "/front-end-challenge-009-static-job-listings-master-reactjs/service-worker.js",
+    "static/css/main.6be5a17f.chunk.css.map": "/front-end-challenge-009-static-job-listings-master-reactjs/static/css/main.6be5a17f.chunk.css.map",
+    "static/js/2.04abfe44.chunk.js.LICENSE.txt": "/front-end-challenge-009-static-job-listings-master-reactjs/static/js/2.04abfe44.chunk.js.LICENSE.txt",
+    "static/media/README.md": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/README.8fc9da64.md",
+    "static/media/account.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/account.9f72c13b.svg",
+    "static/media/active-states.jpg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/active-states.e2e3cc6b.jpg",
+    "static/media/bg-header-desktop.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/bg-header-desktop.6e2f7196.svg",
+    "static/media/bg-header-mobile.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/bg-header-mobile.6b5ff5a0.svg",
+    "static/media/desktop-design.jpg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/desktop-design.a49054ff.jpg",
+    "static/media/desktop-preview.jpg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/desktop-preview.1b35d4fb.jpg",
+    "static/media/eyecam-co.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/eyecam-co.39eaebdf.svg",
+    "static/media/faceit.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/faceit.76faa79f.svg",
+    "static/media/icon-remove.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/icon-remove.ae67c678.svg",
+    "static/media/insure.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/insure.52b85a50.svg",
+    "static/media/logo.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/logo.5d5d9eef.svg",
+    "static/media/loop-studios.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/loop-studios.6c50fd74.svg",
+    "static/media/manage.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/manage.fbe431a9.svg",
+    "static/media/mobile-design.jpg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/mobile-design.ec46e5ea.jpg",
+    "static/media/mobile-with-filters.jpg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/mobile-with-filters.640ab81e.jpg",
+    "static/media/myhome.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/myhome.e0ad9358.svg",
+    "static/media/photosnap.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/photosnap.3f34b49c.svg",
+    "static/media/shortly.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/shortly.45f63772.svg",
+    "static/media/style-guide.md": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/style-guide.04aebdb0.md",
+    "static/media/the-air-filter-company.svg": "/front-end-challenge-009-static-job-listings-master-reactjs/static/media/the-air-filter-company.23b515f9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abfc68b8.js",
+    "static/js/2.04abfe44.chunk.js",
+    "static/css/main.6be5a17f.chunk.css",
+    "static/js/main.44357e50.chunk.js"
+  ]
+}
