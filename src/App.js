@@ -41,15 +41,12 @@ function App() {
       <header></header>
       <main>
         {filters.length >0 &&
-        
         <div className="FilterCard">
         <div className="FilterTags">
           {filters.length > 0 && (filters.map(filter => (<div className="FilterTag" onClick={() => removeFilter(filter)}><div className="name">{filter}</div><div class="FilterButton"></div></div>)) )}
         </div>
           {filters.length > 0 && (<div className="ClearButton" onClick={() => clearFiters()}>Clear</div>)}
-  
         </div>
-        
         }
 
       {filteredCards
